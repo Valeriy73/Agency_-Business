@@ -23,23 +23,16 @@
 			.approach__text {
 				padding: 70px 90px;
 			}
+
+			.approach__step {
+				right: auto;
+				left: -58px;
+			}
 		}
+
 	}
 
-	&__step {
-		@include centerer-y();
-
-		right: -58px;
-		width: 103px;
-		height: 103px;
-		padding-top: 10px;
-		border-radius: 5px;
-		border: 2px solid #fff;
-		text-align: center;
-		font-size: 1.25rem;
-		background-color: #de2b24;
-		color: #fff;
-	}
+	
 
 	&__image {
 		position: relative;
@@ -60,5 +53,31 @@
 		vertical-align: top;
 		width: 64%;
 		padding: 70px 70px 55px 90px;
+		font-size: 0.875rem;
+	}
+
+	&__step {
+		@include centerer-y();
+
+		right: -58px;
+		width: 103px;
+		height: 103px;
+		padding-top: 10px;
+		border-radius: 5px;
+		border: 2px solid #fff;
+		text-align: center;
+		font-size: 1.25rem;
+		background-color: #de2b24;
+		color: #fff;
+
+		&:before {
+			content: counter(count);
+			counter-increment: count;
+			display: block;
+			font-family: $ff-steps;
+			font-size: 3rem;
+			line-height: 1;
+			color: #FFF;
+		}
 	}
 }
