@@ -7,13 +7,14 @@ footer.footer
 			.footer__title Get in touch
 			.footer__links
 				each item, key in linkItems
-					a(href="http://"+linkUrls[key])
+					a.footer__social(href="http://"+linkUrls[key] target="_blank")
 						i(class="fa fa-"+item  aria-hidden="true")
 							span.visually-hidden=linkItems[key]
 			.footer__text Subscribe to our newsletter to stay update with what is new
 			form(action="#" metod="post")
 				.footer__field
-					input
+					input.footer__input(type="email" placeholder="Email Address")
+					button(type="submit").button Subscribe
 
 
 	.footer__bottom
