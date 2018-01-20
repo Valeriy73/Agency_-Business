@@ -4,6 +4,11 @@
 	text-align: center;
 	color: #fff;
 	background: #ccc url('../images/hero-bg.jpg') center/cover no-repeat;
+
+	@media (max-width: 985px) {
+		padding: 100px 25px;
+		min-height: inherit;
+	}
 	
 	&__about {
 		font-family: $ff-main-bold;
