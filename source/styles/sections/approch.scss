@@ -37,7 +37,7 @@
 			}
 
 			.approach__text {
-				padding: 70px 90px 55px 90px;
+				padding: 66px 90px 55px 90px;
 
 				@media (max-width: 985px) {
 					padding: 25px 20px;
@@ -91,7 +91,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 64%;
-		padding: 70px 70px 55px 90px;
+		padding: 66px 70px 55px 90px;
 		font-size: 0.875rem;
 
 		@media (max-width: 985px) {
@@ -107,7 +107,7 @@
 	&__step {
 		@include centerer-y();
 
-		right: -58px;
+		right: -54px;
 		width: 103px;
 		height: 103px;
 		padding-top: 10px;
